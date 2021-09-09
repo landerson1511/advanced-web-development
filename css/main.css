@@ -1,0 +1,257 @@
+/* Base Styles */
+
+html {font-size: 16px;}
+
+body {font-size: 1em;
+text-align: left;
+color: white;}
+
+
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------------- Base header - Footer styles --------------------------------- */
+
+header, footer {
+    background-color: #1f232c;
+    color: white;
+    display: flex;
+    justify-content: Center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header nav ul li {
+    font-size: 1.125em;
+    text-shadow: 2px 2px 2px black;
+}
+
+li:hover {
+    color: gray;
+
+}
+
+footer {
+    text-align: center;
+    flex-direction: column;
+}
+
+footer .contact {
+    margin-bottom: 50px;
+}
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer .social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+footer .social-icons p i {
+    font-size: 1.3125em;
+}
+
+footer .copyright {
+    margin: 20px 0;
+}
+
+/* --------------------------------Hero Area--------------------------------*/
+
+.hero-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero-area h2 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f232c;
+    flex-flow: row wrap;
+}
+
+.pricing {
+    display: block;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: column wrap;
+    max-width: 960px;
+
+}
+
+.pricing-plan {
+    flex: 1;
+    background-color: #1f262c;
+    margin: 15px 8px;
+    padding: 30px;
+    border-radius: 6px;
+    color:;
+
+}
+
+.pricing-plan h3 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e30046;
+    box-shadow: 2px 2px 2px  #9900ff;
+
+}
+
+.pricing-plan p {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.pricing-plan p span {
+    font-size: 1.8em;
+}
+
+.pricing-plan ul {
+    margin: 0 0 35px;
+    padding-left: 16px;
+    line-height: 1.8em;
+    color: white;
+}
+
+.pricing-plan button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background: #e30046;
+    border: 2px solid #e30046;
+    border-radius: 5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px #9900ff;
+}
+
+.pricing-plan button:hover {
+    background-color: #1f262c;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row wrap;
+    color: #1f232c;
+}
+
+
+
+/*--------------------------------- Tablet Styles -------------------------------*/
+
+@media only screen and (min-width:768px) {
+
+    /* General Styles */
+    .content-wrapper {max-width: 640px;
+    margin: 100px 0;}
+
+
+    .pricing {
+        display: flex;
+    }
+
+    footer .content-wrapper {
+        width: 65%;
+        margin: 100px 0;
+    }
+
+    footer .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    /* General Styles */
+    header .content-wrapper {
+        max-width: 960px;
+    }
+
+    header nav {
+        width:40%;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+
+
+
+}
